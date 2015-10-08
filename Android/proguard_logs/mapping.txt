@@ -1,0 +1,83 @@
+com.benheron.Tile_Run.Assets -> com.benheron.Tile_Run.a:
+    android.graphics.Bitmap play -> a
+    android.graphics.Bitmap playDwn -> b
+    android.graphics.Bitmap edit -> c
+    android.graphics.Bitmap editDwn -> d
+    android.graphics.Bitmap welscreen -> e
+    void load() -> a
+    android.graphics.Bitmap loadBitmap(java.lang.String,boolean) -> a
+com.benheron.Tile_Run.GameView -> com.benheron.Tile_Run.b:
+    android.graphics.Bitmap gameImage -> a
+    android.graphics.Rect gameImageSrc -> b
+    android.graphics.Rect gameImageDst -> c
+    android.graphics.Canvas gameCanvas -> d
+    com.benheron.framework.util.Painter graphics -> e
+    java.lang.Thread gameThread -> f
+    boolean running -> g
+    com.benheron.game.state.State currentState -> h
+    com.benheron.framework.util.InputHandler inputHandler -> i
+    void setCurrentState(com.benheron.game.state.State) -> setCurrentState
+    void initInput() -> a
+    void initGame() -> b
+    void pauseGame() -> c
+    void updateAndRender(long) -> a
+    void renderGameImage() -> d
+    void run() -> run
+    void access$000(com.benheron.Tile_Run.GameView) -> a
+    com.benheron.game.state.State access$100(com.benheron.Tile_Run.GameView) -> b
+    void access$200(com.benheron.Tile_Run.GameView) -> c
+    void access$300(com.benheron.Tile_Run.GameView) -> d
+com.benheron.Tile_Run.GameView$1 -> com.benheron.Tile_Run.c:
+    com.benheron.Tile_Run.GameView this$0 -> a
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+com.benheron.Tile_Run.TR -> com.benheron.Tile_Run.TR:
+    com.benheron.Tile_Run.GameView sGame -> a
+    android.content.res.AssetManager assets -> b
+    android.content.SharedPreferences prefs -> c
+    void onCreate(android.os.Bundle) -> onCreate
+com.benheron.framework.util.InputHandler -> com.benheron.a.a.a:
+    com.benheron.game.state.State currentState -> a
+    void setCurrentState(com.benheron.game.state.State) -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.benheron.framework.util.Painter -> com.benheron.a.a.b:
+    android.graphics.Canvas canvas -> a
+    android.graphics.Paint paint -> b
+    android.graphics.Rect srcRect -> c
+    android.graphics.Rect dstRect -> d
+    android.graphics.RectF dstRectF -> e
+    void drawImage(android.graphics.Bitmap,int,int) -> a
+    void drawImage(android.graphics.Bitmap,int,int,int,int) -> a
+com.benheron.framework.util.UIButton -> com.benheron.a.a.c:
+    android.graphics.Rect buttonRect -> a
+    boolean buttonDown -> b
+    android.graphics.Bitmap buttonImage -> c
+    android.graphics.Bitmap buttonDownImage -> d
+    void render(com.benheron.framework.util.Painter) -> a
+    void onTouchDown(int,int) -> a
+    void cancel() -> a
+    boolean isPressed(int,int) -> b
+com.benheron.game.state.LoadState -> com.benheron.b.a.a:
+    void init() -> a
+    void update(float) -> a
+    void render(com.benheron.framework.util.Painter) -> a
+    boolean onTouch(android.view.MotionEvent,int,int) -> a
+com.benheron.game.state.MenuState -> com.benheron.b.a.b:
+    com.benheron.framework.util.UIButton playButton -> a
+    com.benheron.framework.util.UIButton editorButton -> b
+    void init() -> a
+    void update(float) -> a
+    void render(com.benheron.framework.util.Painter) -> a
+    boolean onTouch(android.view.MotionEvent,int,int) -> a
+com.benheron.game.state.PlayState -> com.benheron.b.a.c:
+    void init() -> a
+    void update(float) -> a
+    void render(com.benheron.framework.util.Painter) -> a
+    boolean onTouch(android.view.MotionEvent,int,int) -> a
+com.benheron.game.state.State -> com.benheron.b.a.d:
+    void setCurrentState(com.benheron.game.state.State) -> a
+    void init() -> a
+    void update(float) -> a
+    void render(com.benheron.framework.util.Painter) -> a
+    boolean onTouch(android.view.MotionEvent,int,int) -> a

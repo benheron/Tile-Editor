@@ -1,0 +1,35 @@
+com.benheron.Tile_Run.Assets:
+    private static android.media.SoundPool soundPool
+    public static int hitID
+    public static int onJumpID
+    13:13:public Assets()
+    73:83:private static int loadSound(java.lang.String)
+    87:88:public static void playSound(int)
+com.benheron.Tile_Run.BuildConfig
+com.benheron.Tile_Run.R
+com.benheron.Tile_Run.R$attr
+com.benheron.Tile_Run.R$drawable
+com.benheron.Tile_Run.R$layout
+com.benheron.Tile_Run.R$string
+com.benheron.Tile_Run.TR:
+    public static final int GAME_WIDTH
+    public static final int GAME_HEIGHT
+    private static final java.lang.String highScoreKey
+    31:34:public static void setHighScore(int)
+    37:37:private int retrieveHighScore()
+com.benheron.framework.util.Painter:
+    26:27:public void setColor(int)
+    30:32:public void setFont(android.graphics.Typeface,float)
+    35:36:public void drawString(java.lang.String,int,int)
+    39:42:public void fillRect(int,int,int,int)
+    55:58:public void fillOval(int,int,int,int)
+com.benheron.game.model.EditorItem
+com.benheron.game.model.airTile
+com.benheron.game.model.editorBar
+com.benheron.game.model.genTile
+com.benheron.game.model.liftTile
+com.benheron.game.model.map
+com.benheron.game.model.player
+com.benheron.game.model.tile
+com.benheron.game.model.worldObject
+com.benheron.game.state.EditorState
